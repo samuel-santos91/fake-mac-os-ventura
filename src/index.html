@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
     <title>Fake macOS Ventura</title>
   </head>
   <body>
@@ -30,7 +31,7 @@
           </ul>
         </section>
         <section class="clock">
-          <p>(display time)</p>
+          <p id="clock">(display time)</p>
         </section>
       </nav>
     </header>
@@ -41,14 +42,62 @@
     </main>
     <footer>
       <ul class="icons-area">
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
-        <li class="icon">Icon</li>
+        <li class="icon">
+          <img src="./images/icons/finder.png" alt="finder" />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/chrome.png" alt="chrome" />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--firefox"
+            src="./images/icons/firefox.png"
+            alt="firefox"
+          />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--safari"
+            src="./images/icons/safari.png"
+            alt="safari"
+          />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/music.png" alt="music" />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/spotify.png" alt="spotify" />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/adobe.png" alt="adobe" />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/vlc.png" alt="vlc" />
+        </li>
+        <li class="icon">
+          <img src="./images/icons/appstore.png" alt="app store" />
+        </li>
+        <li class="icon">
+          <img class="icon--slack" src="./images/icons/slack.png" alt="slack" />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--visual"
+            src="./images/icons/visualcode.png"
+            alt="visual studio code"
+          />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--setting"
+            src="./images/icons/settings.png"
+            alt="settings"
+          />
+        </li>
+        <hr />
+        <li class="icon">
+          <img class="icon--bin" src="./images/icons/bin.png" alt="bin" />
+        </li>
       </ul>
     </footer>
   </body>

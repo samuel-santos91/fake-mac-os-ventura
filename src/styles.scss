@@ -55,7 +55,7 @@ body {
   main {
     position: fixed;
     top: 5rem;
-    right: 0;
+    right: 4rem;
 
     .icon {
       background-color: blue;
@@ -73,20 +73,64 @@ body {
     width: 100%;
 
     .icons-area {
-      background-color: rgb(211, 207, 228);
+      background-color: rgba(86, 98, 142, 0.984);
       list-style-type: none;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
       margin: 0 0 0.4rem 0;
-      padding: .4rem;
+      padding: 0.3rem;
       border-radius: 17px;
-      width: 80vw;
 
       .icon {
-        background-color: blue;
-        width: 1rem;
-        height: .6rem;
-        padding: 1rem;
+        width: 3rem;
+        margin: 0 0.3rem;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+        &--firefox {
+          width: 2.5rem;
+        }
+        &--safari {
+          width: 2.8rem;
+        }
+        &--slack {
+          width: 1.7rem;
+          background-color: white;
+          padding: 0.3rem;
+          border-radius: 10px;
+          margin: auto;
+        }
+        &--visual {
+          width: 1.9rem;
+          background-color: white;
+          padding: 0.2rem;
+          border-radius: 10px;
+          margin: auto;
+        }
+        &--setting {
+          width: 2.2rem;
+          background-color: rgb(182, 182, 182);
+          padding: 0.1rem;
+          border-radius: 10px;
+          margin: auto;
+        }
+        &--bin {
+          width: 2.8rem;
+        }
+      }
+      hr {
+        width: 2.5rem;
+        transform: rotate(90deg);
+        border: 0.1px solid black;
+        margin: 0;
       }
     }
   }

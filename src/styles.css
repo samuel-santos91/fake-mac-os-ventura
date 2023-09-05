@@ -44,7 +44,7 @@ body header nav .clock p {
 body main {
   position: fixed;
   top: 5rem;
-  right: 0;
+  right: 4rem;
 }
 body main .icon {
   background-color: blue;
@@ -60,18 +60,61 @@ body footer {
   width: 100%;
 }
 body footer .icons-area {
-  background-color: rgb(211, 207, 228);
+  background-color: rgba(86, 98, 142, 0.984);
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin: 0 0 0.4rem 0;
-  padding: 0.4rem;
+  padding: 0.3rem;
   border-radius: 17px;
-  width: 80vw;
 }
 body footer .icons-area .icon {
-  background-color: blue;
-  width: 1rem;
-  height: 0.6rem;
-  padding: 1rem;
+  width: 3rem;
+  margin: 0 0.3rem;
+  transition: transform 0.2s ease;
+}
+body footer .icons-area .icon:hover {
+  transform: scale(1.2);
+}
+body footer .icons-area .icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body footer .icons-area .icon--firefox {
+  width: 2.5rem;
+}
+body footer .icons-area .icon--safari {
+  width: 2.8rem;
+}
+body footer .icons-area .icon--slack {
+  width: 1.7rem;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin: auto;
+}
+body footer .icons-area .icon--visual {
+  width: 1.9rem;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 10px;
+  margin: auto;
+}
+body footer .icons-area .icon--setting {
+  width: 2.2rem;
+  background-color: rgb(182, 182, 182);
+  padding: 0.1rem;
+  border-radius: 10px;
+  margin: auto;
+}
+body footer .icons-area .icon--bin {
+  width: 2.8rem;
+}
+body footer .icons-area hr {
+  width: 2.5rem;
+  transform: rotate(90deg);
+  border: 0.1px solid black;
+  margin: 0;
 }
