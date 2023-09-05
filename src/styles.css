@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  font-size: small;
+  background-color: rgb(21, 19, 24);
+}
+body header nav .menu__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+body header nav .menu__list li {
+  margin: 0 0.5rem;
+}
+body header nav .menu__list--apple img {
+  margin-top: 0.3rem;
+  width: 1.1rem;
+}
+body header nav .menu__list--bold {
+  font-weight: 600;
+}
+body header nav .clock p {
+  margin-right: 1rem;
+}
+body main {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+}
+body main .icon {
+  background-color: blue;
+  padding: 1rem;
+  margin: 1rem;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body footer .icons-area {
+  background-color: rgb(211, 207, 228);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 0.4rem 0;
+  padding: 0.4rem;
+  border-radius: 17px;
+  width: 80vw;
+}
+body footer .icons-area .icon {
+  background-color: blue;
+  width: 1rem;
+  height: 0.6rem;
+  padding: 1rem;
+}
