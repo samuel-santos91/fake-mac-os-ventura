@@ -1,4 +1,5 @@
 @mixin dropdownMenu($width, $position) {
+  display: none;
   background-color: rgb(186, 196, 215);
   width: $width;
   padding: 0.4rem 0.5rem;
@@ -28,6 +29,7 @@
 }
 
 @mixin appWindow($top, $left, $bg-color) {
+  display: none;
   position: absolute;
   top: $top;
   left: $left;

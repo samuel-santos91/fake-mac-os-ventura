@@ -11,8 +11,8 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/dropdowns.css" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./js/script.mjs" defer></script>
     <title>Fake macOS Ventura</title>
   </head>
 
@@ -34,7 +34,9 @@
           </ul>
         </section>
         <section class="clock">
-          <p id="clock">(display time)</p>
+          <div>
+            <p id="clock"></p>
+          </div>
         </section>
       </nav>
 
@@ -205,28 +207,66 @@
     </header>
 
     <main>
-      <section class="google-app">
+      <section class="google-app" id="googleAppWindow">
         <div class="google-app__header">
-          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
-          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
-          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+          <img
+            id="google"
+            class="google-app__header--close"
+            src="./images/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="google-app__header--min"
+            src="./images/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="google-app__header--exp"
+            src="./images/icons/expand.png"
+            alt="expand window"
+          />
         </div>
       </section>
-      <section class="music-app">
+      <section class="music-app" id="musicAppWindow">
         <div class="music-app__header">
-          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
-          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
-          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+          <img
+            id="music"
+            class="music-app__header--close"
+            src="./images/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="music-app__header--min"
+            src="./images/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="music-app__header--exp"
+            src="./images/icons/expand.png"
+            alt="expand window"
+          />
         </div>
       </section>
-      <section class="some-other-app">
-        <div class="some-other-app__header">
-          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
-          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
-          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+      <section class="photos-app" id="photosAppWindow">
+        <div class="photos-app__header">
+          <img
+            id="photos"
+            class="photos-app__header--close"
+            src="./images/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="photos-app__header--min"
+            src="./images/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="photos-app__header--exp"
+            src="./images/icons/expand.png"
+            alt="expand window"
+          />
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -235,7 +275,7 @@
           <img src="./images/icons/finder.png" alt="finder" />
         </li>
         <li class="icon">
-          <img src="./images/icons/chrome.png" alt="chrome" />
+          <img id="google" src="./images/icons/chrome.png" alt="chrome" />
         </li>
         <li class="icon">
           <img
@@ -252,7 +292,7 @@
           />
         </li>
         <li class="icon">
-          <img src="./images/icons/music.png" alt="music" />
+          <img id="music" src="./images/icons/music.png" alt="music" />
         </li>
         <li class="icon">
           <img src="./images/icons/spotify.png" alt="spotify" />
@@ -264,10 +304,15 @@
           <img src="./images/icons/vlc.png" alt="vlc" />
         </li>
         <li class="icon">
-          <img src="./images/icons/appstore.png" alt="app store" />
+          <img
+            id="photos"
+            class="icon--photos"
+            src="./images/icons/photos.png"
+            alt="photos"
+          />
         </li>
         <li class="icon">
-          <img class="icon--slack" src="./images/icons/slack.png" alt="slack" />
+          <img src="./images/icons/appstore.png" alt="app store" />
         </li>
         <li class="icon">
           <img

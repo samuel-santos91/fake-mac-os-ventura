@@ -2,17 +2,15 @@
 
 main {
   .google-app {
-    display: block;
+    display: none;
     @include mixins.appWindow(4rem, 5rem, white);
   }
 
   .music-app {
-    display: block;
     @include mixins.appWindow(7rem, 20rem, rgb(216, 68, 68));
   }
 
-  .some-other-app {
-    display: block;
-    @include mixins.appWindow(10rem, 35rem, rgb(80, 216, 68));
+  .photos-app {
+    @include mixins.appWindow(10rem, 35rem, rgb(40, 140, 56));
   }
 }
