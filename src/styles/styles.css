@@ -76,12 +76,25 @@ body footer .icons-area .icon {
   transition: transform 0.2s ease;
 }
 body footer .icons-area .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) translate(0, -5px);
 }
 body footer .icons-area .icon img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+body footer .icons-area .icon__opened-app {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 0.1rem;
+  position: relative;
+  top: -1.5rem;
+  color: black;
+  font-size: 1.8rem;
+}
+body footer .icons-area .icon__opened-app--photos {
+  top: -1.2rem;
 }
 body footer .icons-area .icon--firefox {
   width: 2.5rem;
