@@ -1,0 +1,117 @@
+main .google-app {
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  background-color: white;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+main .google-app__header {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .google-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .google-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .google-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+main .music-app {
+  display: block;
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+  background-color: rgb(216, 68, 68);
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+main .music-app__header {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .music-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .music-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .music-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+main .some-other-app {
+  display: block;
+  position: absolute;
+  top: 10rem;
+  left: 35rem;
+  background-color: rgb(80, 216, 68);
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+main .some-other-app__header {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .some-other-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .some-other-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .some-other-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}

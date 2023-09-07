@@ -1,0 +1,244 @@
+.apple-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 15rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 0.4rem;
+}
+.apple-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.apple-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.apple-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.apple-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.finder-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 10rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 2.3rem;
+}
+.finder-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.finder-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.finder-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.finder-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.file-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 14rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 6rem;
+}
+.file-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.file-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.file-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.file-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.edit-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 13rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 8.3rem;
+}
+.edit-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.edit-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.edit-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.edit-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.view-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 14rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 10.8rem;
+}
+.view-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.view-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.view-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.view-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.go-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 13rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 13.5rem;
+}
+.go-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.go-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.go-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.go-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.window-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 22rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 15.8rem;
+}
+.window-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.window-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.window-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.window-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+
+.help-menu {
+  display: none;
+  background-color: rgb(186, 196, 215);
+  width: 22rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 19.8rem;
+}
+.help-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.help-menu__list li {
+  margin: 0;
+  padding: 0.2rem 0.4rem;
+}
+.help-menu__list li:hover {
+  background-color: rgb(55, 102, 255);
+  border-radius: 5px;
+  color: white;
+}
+.help-menu__list hr {
+  width: 98%;
+  border: 0.1px solid rgb(155, 155, 155);
+}
+.help-menu input {
+  margin-bottom: 0.5rem;
+  background-color: rgb(166, 175, 191);
+  width: 21.5rem;
+  height: 1.4rem;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-indent: 0.5rem;
+}
+.help-menu input:focus-visible {
+  outline: none;
+}

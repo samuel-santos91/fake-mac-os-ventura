@@ -9,10 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/dropdowns.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./script.js" defer></script>
     <title>Fake macOS Ventura</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -34,12 +37,198 @@
           <p id="clock">(display time)</p>
         </section>
       </nav>
+
+      <section class="dropdown-menu">
+        <div class="apple-menu">
+          <ul class="apple-menu__list">
+            <li>About This Mac</li>
+            <hr />
+            <li>System Settings...</li>
+            <li>App Store...</li>
+            <hr />
+            <li>Force Quit</li>
+            <hr />
+            <li>Sleep</li>
+            <li>Restart...</li>
+            <li>Shut Down...</li>
+            <hr />
+            <li>Log Out</li>
+          </ul>
+        </div>
+
+        <div class="finder-menu">
+          <ul class="finder-menu__list">
+            <li>About Finder</li>
+            <hr />
+            <li>Settings...</li>
+            <hr />
+            <li>Empty Bin...</li>
+            <hr />
+            <li>Services</li>
+            <hr />
+            <li>Hide Finder</li>
+            <li>Hide Others</li>
+            <li>Show All</li>
+          </ul>
+        </div>
+
+        <div class="file-menu">
+          <ul class="file-menu__list">
+            <li>New Finder Window</li>
+            <li>New Folder</li>
+            <li>New Folder With Selection</li>
+            <li>New Smart Folder</li>
+            <li>New Tab</li>
+            <li>Open</li>
+            <li>Open With</li>
+            <li>Close Window</li>
+            <hr />
+            <li>Get Info</li>
+            <li>Rename</li>
+            <li>Compress</li>
+            <li>Duplicate</li>
+            <li>Make Alias</li>
+            <li>Quick Look</li>
+            <li>Print</li>
+            <hr />
+            <li>Share...</li>
+            <hr />
+            <li>Show Original</li>
+            <li>Add to Sidebar</li>
+            <hr />
+            <li>Move to Bin</li>
+            <li>Eject</li>
+            <hr />
+            <li>Find</li>
+          </ul>
+        </div>
+
+        <div class="edit-menu">
+          <ul class="edit-menu__list">
+            <li>Undo Move of 2 Items</li>
+            <li>Redo</li>
+            <hr />
+            <li>Cut</li>
+            <li>Copy</li>
+            <li>Paste</li>
+            <li>Select All</li>
+            <hr />
+            <li>Show Clipboard</li>
+            <hr />
+            <li>Start Dictation...</li>
+            <li>Emoji & Symbols</li>
+          </ul>
+        </div>
+
+        <div class="view-menu">
+          <ul class="view-menu__list">
+            <li>as Icons</li>
+            <li>as List</li>
+            <li>as Columns</li>
+            <li>as Gallery</li>
+            <hr />
+            <li>Use Stacks</li>
+            <li>Sort By</li>
+            <li>Clean Up</li>
+            <li>Clean Up By</li>
+            <hr />
+            <li>Hide Sidebar</li>
+            <li>Hide Preview</li>
+            <hr />
+            <li>Hide Toolbar</li>
+            <li>Show All Tabs</li>
+            <li>Hide Tab Bar</li>
+            <li>Hide Status Bar</li>
+            <hr />
+            <li>Customise Toolbar...</li>
+            <hr />
+            <li>Show View Options</li>
+            <li>Show Preview Options</li>
+          </ul>
+        </div>
+
+        <div class="go-menu">
+          <ul class="go-menu__list">
+            <li>Back</li>
+            <li>Forward</li>
+            <li>Select Startup Disk</li>
+            <hr />
+            <li>Recent</li>
+            <li>Documents</li>
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Home</li>
+            <li>Computer</li>
+            <li>AirDrop</li>
+            <li>Network</li>
+            <li>iCloud Drive</li>
+            <li>Shared</li>
+            <li>Applications</li>
+            <li>Utilities</li>
+            <hr />
+            <li>Go to Folder...</li>
+            <li>Connect to Server...</li>
+          </ul>
+        </div>
+
+        <div class="window-menu">
+          <ul class="window-menu__list">
+            <li>Minimise</li>
+            <li>Zoom</li>
+            <li>Move Window to the Left Side of the Screen</li>
+            <li>Move Window to the Right Side of the Screen</li>
+            <li>Replace Window</li>
+            <hr />
+            <li>Remove Window From Set</li>
+            <li>Cycle Through Windows</li>
+            <li>Show Progress Window</li>
+            <hr />
+            <li>Show Previous Tab</li>
+            <li>Show Next Tab</li>
+            <li>Computer</li>
+            <li>Move Tab to New Window</li>
+            <li>Network</li>
+            <li>Merge All Windows</li>
+            <hr />
+            <li>Bring All to Front</li>
+          </ul>
+        </div>
+
+        <div class="help-menu">
+          <ul class="help-menu__list">
+            <input type="text" placeholder="search" />
+            <li>Tips for Your Mac</li>
+            <li>macOs Help</li>
+          </ul>
+        </div>
+      </section>
     </header>
+
     <main>
-      <div class="icon">Icon</div>
-      <div class="icon">Icon</div>
-      <div class="icon">Icon</div>
+      <section class="google-app">
+        <div class="google-app__header">
+          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
+          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
+          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+        </div>
+      </section>
+      <section class="music-app">
+        <div class="music-app__header">
+          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
+          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
+          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+        </div>
+      </section>
+      <section class="some-other-app">
+        <div class="some-other-app__header">
+          <img class="google-app__header--close" src="./images/icons/close.png" alt="close window icon">
+          <img class="google-app__header--min" src="./images/icons/minimize.png" alt="minimize window">
+          <img class="google-app__header--exp" src="./images/icons/expand.png" alt="expand window">
+        </div>
+      </section>
+
     </main>
+
     <footer>
       <ul class="icons-area">
         <li class="icon">
