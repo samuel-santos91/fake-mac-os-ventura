@@ -2,7 +2,6 @@
 
 main {
   .google-app {
-    display: none;
     @include mixins.appWindow(4rem, 5rem, white);
   }
 

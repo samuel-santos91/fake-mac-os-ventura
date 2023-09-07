@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/dropdowns.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./js/dropdownMenus.mjs" defer></script>
     <script type="module" src="./js/script.mjs" defer></script>
     <title>Fake macOS Ventura</title>
   </head>
@@ -22,15 +23,15 @@
         <section class="menu">
           <ul class="menu__list">
             <li class="menu__list--apple">
-              <img src="./images/icons/apple-icon.png" alt="apple icon" />
+              <img id="apple" class="list" src="./images/icons/apple-icon.png" alt="apple icon" />
             </li>
-            <li class="menu__list--bold">Finder</li>
-            <li>File</li>
-            <li>Edit</li>
-            <li>View</li>
-            <li>Go</li>
-            <li>Window</li>
-            <li>Help</li>
+            <li id="finder" class="menu__list--bold list">Finder</li>
+            <li id="file" class="list">File</li>
+            <li id="edit" class="list">Edit</li>
+            <li id="view" class="list">View</li>
+            <li id="go" class="list">Go</li>
+            <li id="window" class="list">Window</li>
+            <li id="help" class="list">Help</li>
           </ul>
         </section>
         <section class="clock">
@@ -41,7 +42,7 @@
       </nav>
 
       <section class="dropdown-menu">
-        <div class="apple-menu">
+        <div class="apple-menu dropdown">
           <ul class="apple-menu__list">
             <li>About This Mac</li>
             <hr />
@@ -58,8 +59,8 @@
           </ul>
         </div>
 
-        <div class="finder-menu">
-          <ul class="finder-menu__list">
+        <div class="finder-menu dropdown">
+          <ul class="finder-menu__list ul">
             <li>About Finder</li>
             <hr />
             <li>Settings...</li>
@@ -74,8 +75,8 @@
           </ul>
         </div>
 
-        <div class="file-menu">
-          <ul class="file-menu__list">
+        <div class="file-menu dropdown">
+          <ul class="file-menu__list ul">
             <li>New Finder Window</li>
             <li>New Folder</li>
             <li>New Folder With Selection</li>
@@ -105,8 +106,8 @@
           </ul>
         </div>
 
-        <div class="edit-menu">
-          <ul class="edit-menu__list">
+        <div class="edit-menu dropdown">
+          <ul class="edit-menu__list ul">
             <li>Undo Move of 2 Items</li>
             <li>Redo</li>
             <hr />
@@ -122,8 +123,8 @@
           </ul>
         </div>
 
-        <div class="view-menu">
-          <ul class="view-menu__list">
+        <div class="view-menu dropdown">
+          <ul class="view-menu__list ul">
             <li>as Icons</li>
             <li>as List</li>
             <li>as Columns</li>
@@ -149,8 +150,8 @@
           </ul>
         </div>
 
-        <div class="go-menu">
-          <ul class="go-menu__list">
+        <div class="go-menu dropdown">
+          <ul class="go-menu__list ul">
             <li>Back</li>
             <li>Forward</li>
             <li>Select Startup Disk</li>
@@ -173,8 +174,8 @@
           </ul>
         </div>
 
-        <div class="window-menu">
-          <ul class="window-menu__list">
+        <div class="window-menu dropdown">
+          <ul class="window-menu__list ul">
             <li>Minimise</li>
             <li>Zoom</li>
             <li>Move Window to the Left Side of the Screen</li>
@@ -196,8 +197,8 @@
           </ul>
         </div>
 
-        <div class="help-menu">
-          <ul class="help-menu__list">
+        <div class="help-menu dropdown">
+          <ul class="help-menu__list ul">
             <input type="text" placeholder="search" />
             <li>Tips for Your Mac</li>
             <li>macOs Help</li>

@@ -31,11 +31,19 @@ body header nav .menu__list {
   align-items: center;
   padding: 0;
 }
-body header nav .menu__list li {
-  margin: 0 0.5rem;
+body header nav .menu__list .list {
+  margin: 0;
+  padding: 0.5rem;
+}
+body header nav .menu__list .highlight {
+  border-radius: 5px;
+  background-color: rgba(86, 98, 142, 0.984);
+}
+body header nav .menu__list--apple {
+  padding: 0.4rem;
+  margin-top: 0.3rem;
 }
 body header nav .menu__list--apple img {
-  margin-top: 0.3rem;
   width: 1.1rem;
 }
 body header nav .menu__list--bold {

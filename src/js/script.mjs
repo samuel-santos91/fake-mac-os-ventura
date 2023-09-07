@@ -1,8 +1,20 @@
 import displayCurrentTime from "./dateTime.mjs";
+import { dropdownMenu, clickOffDropdownBlock } from "./dropdownMenus.mjs";
 
+//DATE AND TIME
 displayCurrentTime();
 setInterval(displayCurrentTime, 60000);
 
+//DROPDOWN MENUS
+const menusList = document.querySelectorAll(".list");
+
+menusList.forEach((item) => {
+  item.addEventListener("click", dropdownMenu);
+});
+
+document.addEventListener("click", clickOffDropdownBlock);
+
+//APPS WINDOWS
 const appIcon = document.querySelectorAll(".icon");
 const closeButton = document.querySelectorAll('[class*="app__header--close"]');
 const appWindow = document.querySelectorAll(

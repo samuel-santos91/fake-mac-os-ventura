@@ -5,31 +5,31 @@
 }
 
 .finder-menu {
-  @include mixins.dropdownMenu(10rem, 2.3rem);
+  @include mixins.dropdownMenu(10rem, 2.8rem);
 }
 
 .file-menu {
-  @include mixins.dropdownMenu(14rem, 6rem);
+  @include mixins.dropdownMenu(14rem, 6.3rem);
 }
 
 .edit-menu {
-  @include mixins.dropdownMenu(13rem, 8.3rem);
+  @include mixins.dropdownMenu(13rem, 8.7rem);
 }
 
 .view-menu {
-  @include mixins.dropdownMenu(14rem, 10.8rem);
+  @include mixins.dropdownMenu(14rem, 11.2rem);
 }
 
 .go-menu {
-  @include mixins.dropdownMenu(13rem, 13.5rem);
+  @include mixins.dropdownMenu(13rem, 14.1rem);
 }
 
 .window-menu {
-  @include mixins.dropdownMenu(22rem, 15.8rem);
+  @include mixins.dropdownMenu(22rem, 16.2rem);
 }
 
 .help-menu {
-  @include mixins.dropdownMenu(22rem, 19.8rem);
+  @include mixins.dropdownMenu(22rem, 20.2rem);
   input {
     margin-bottom: 0.5rem;
     background-color: rgb(166, 175, 191);
