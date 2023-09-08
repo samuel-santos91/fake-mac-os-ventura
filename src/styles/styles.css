@@ -16,6 +16,7 @@ body header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 11;
   width: 100%;
 }
 body header nav {
@@ -84,17 +85,16 @@ body footer .icons-area .icon img {
   display: block;
 }
 body footer .icons-area .icon__opened-app {
-  margin: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
   height: 0.1rem;
-  position: relative;
-  top: -1.5rem;
+  transform: translate(0, 23px) rotate(180deg);
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 body footer .icons-area .icon__opened-app--photos {
-  top: -1.2rem;
+  transform: translate(0, 28px) rotate(180deg);
 }
 body footer .icons-area .icon--firefox {
   width: 2.5rem;
@@ -112,6 +112,10 @@ body footer .icons-area .icon--visual {
   padding: 0.2rem;
   border-radius: 10px;
   margin: auto;
+}
+body footer .icons-area .icon--visual::before {
+  content: "hello";
+  z-index: 10;
 }
 body footer .icons-area .icon--setting {
   width: 2.2rem;

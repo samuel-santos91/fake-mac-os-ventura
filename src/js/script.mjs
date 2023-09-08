@@ -18,15 +18,19 @@ document.addEventListener("click", clickOffDropdownBlock);
 const appIcon = document.querySelectorAll(".icon");
 const closeButton = document.querySelectorAll('[class*="app__header--close"]');
 const appWindow = document.querySelectorAll(
-  ".google-app, .music-app, .photos-app"
+  ".google-app, .musics-app, .photos-app"
 );
+
+const cleanZIndex = () => {
+  appWindow.forEach((icon) => {
+    icon.style.zIndex = 0;
+  });
+};
 
 const openApp = (e) => {
   const elem = document.getElementById(`${e.target.id}AppWindow`);
   if (elem) {
-    appWindow.forEach((icon) => {
-      icon.style.zIndex = 0;
-    });
+    cleanZIndex();
 
     elem.style.display = "block";
     elem.style.zIndex = 10;
@@ -39,12 +43,18 @@ const closeApp = (e) => {
 };
 
 const bringForward = (e) => {
-  appWindow.forEach((icon) => {
-    icon.style.zIndex = 0;
-  });
+  cleanZIndex();
 
   const elem = document.getElementById(e.target.id);
-  elem.style.zIndex = 10;
+
+  if (elem) {
+    elem.style.zIndex = 10;
+  } else {
+    const newElem = document.getElementById(
+      `${e.target.classList.value.slice(0, 6)}AppWindow`
+    );
+    newElem.style.zIndex = 10;
+  }
 };
 
 appIcon.forEach((icon) => {
@@ -55,6 +65,7 @@ closeButton.forEach((icon) => {
   icon.addEventListener("click", closeApp);
 });
 
-appWindow.forEach((icon) => {
-  icon.addEventListener("click", bringForward);
+appWindow.forEach((window) => {
+  window.addEventListener("click", bringForward);
 });
+

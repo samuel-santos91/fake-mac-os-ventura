@@ -16,6 +16,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 11;
     width: 100%;
 
     nav {
@@ -93,16 +94,15 @@ body {
           display: block;
         }
         &__opened-app {
-          margin: 0;
           display: flex;
           justify-content: center;
+          margin: 0;
           height: 0.1rem;
-          position: relative;
-          top: -1.5rem;
+          transform: translate(0, 23px) rotate(180deg);
           color: black;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           &--photos {
-            top: -1.2rem;
+            transform: translate(0, 28px) rotate(180deg);
           }
         }
         &--firefox {
@@ -121,6 +121,10 @@ body {
           padding: 0.2rem;
           border-radius: 10px;
           margin: auto;
+          &::before {
+            content: "hello";
+            z-index: 10;
+          }
         }
         &--setting {
           width: 2.2rem;
