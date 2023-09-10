@@ -90,7 +90,7 @@ main .musics-app {
   position: absolute;
   top: 7rem;
   left: 20rem;
-  background-color: rgb(216, 68, 68);
+  background-color: rgb(255, 106, 106);
   width: 50rem;
   height: 30rem;
   border-radius: 10px;
@@ -125,12 +125,96 @@ main .musics-app__header--exp {
   border-radius: 50%;
   transform: rotate(45deg);
 }
+main .musics-app__header-commands {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+main .musics-app__header-commands--audio-track {
+  margin-right: 1rem;
+}
+main .musics-app__header-commands--audio-track input {
+  width: 20rem;
+}
+main .musics-app__header-commands--track-time {
+  margin: 0 5rem 0 0;
+  color: black;
+}
+main .musics-app__header-commands--volume-track input {
+  width: 5rem;
+}
+main .musics-app__header-commands--sound-icon {
+  width: 1rem;
+  margin: 0 0.5rem;
+}
+main .musics-app__main {
+  margin: 3rem 2.5rem 0 2.5rem;
+}
+main .musics-app__main .album {
+  margin: 4rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .musics-app__main .album__info {
+  margin-left: 2rem;
+}
+main .musics-app__main .album__info--version {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  color: black;
+}
+main .musics-app__main .album__info--band {
+  margin: 0 0 1rem 0;
+  font-size: 1.7rem;
+  color: rgb(162, 0, 0);
+}
+main .musics-app__main .album__info--play {
+  margin: 2rem 0 0 -1rem;
+  width: 6rem;
+  padding: 0.4rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: rgb(250, 38, 38);
+}
+main .musics-app__main .album__info img {
+  position: relative;
+  top: 0.3rem;
+  left: 1rem;
+  width: 1.1rem;
+}
+main .musics-app__main .album__image {
+  width: 15rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+}
+main .musics-app__main .album-list {
+  display: flex;
+  justify-content: space-between;
+}
+main .musics-app__main .album-list ol {
+  padding-left: 1.2rem;
+}
+main .musics-app__main .album-list ol li {
+  padding-left: 0.9rem;
+}
+main .musics-app__main .album-list p {
+  margin-right: 0.5rem;
+}
+main .musics-app__main hr {
+  width: 44.5rem;
+  border: 0.1px solid white;
+}
 main .photos-app {
   display: none;
   position: absolute;
   top: 10rem;
   left: 35rem;
-  background-color: white;
+  background-color: rgb(250, 246, 246);
   width: 50rem;
   height: 30rem;
   border-radius: 10px;

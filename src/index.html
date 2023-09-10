@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/dropdowns.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <script type="module" src="./js/dropdownMenus.mjs" defer></script>
     <script type="module" src="./js/script.mjs" defer></script>
     <title>Fake macOS Ventura</title>
   </head>
@@ -278,6 +277,65 @@
             alt="expand window"
           />
         </div>
+
+        <div class="musics-app__header-commands">
+          <div class="musics-app__header-commands--audio-track">
+            <input type="range" id="audioSlider" min="0" max="1" value="0" />
+          </div>
+          <p id="audioCurrentTime" class="musics-app__header-commands--track-time">-·-</p>
+          <img
+            class="musics-app__header-commands--sound-icon"
+            src="./images/apps/icons/nosound.png"
+            alt="no sound"
+          />
+          <div class="musics-app__header-commands--volume-track">
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
+          <img
+            class="musics-app__header-commands--sound-icon"
+            src="./images/apps/icons/sound.png"
+            alt="max sound"
+          />
+        </div>
+
+        <div class="musics-app__main">
+          <div class="album">
+            <img
+              class="album__image"
+              src="./images/apps/images/album-cover.jpg"
+              alt="alice in chains album cover"
+            />
+            <div class="album__info">
+              <h2 class="album__info--version">Unplugged</h2>
+              <p class="album__info--band">Alice in Chains</p>
+              <p class="album__info--genre">ALTERNATIVE · 1996</p>
+              <img
+                id="playIcon"
+                src="./images/apps/icons/play.png"
+                alt="play/pause"
+              />
+              <button class="album__info--play" id="playButton">Play</button>
+            </div>
+          </div>
+
+          <hr />
+          <div class="album-list">
+            <ol>
+              <li>Rooster</li>
+            </ol>
+            <p>6:40</p>
+          </div>
+          <hr />
+
+          <audio id="audioPlayer" src="./audio/rooster.mp3"></audio>
+        </div>
       </section>
 
       <section class="photos-app" id="photosAppWindow">
@@ -301,51 +359,51 @@
         </div>
 
         <div class="photos-app__main">
-          <h2>15 Jun 2015</h2>
+          <h2>15 Jun 2020</h2>
           <img
             class="photos-app__main--1"
             src="./images/apps/images/photo1.jpeg"
-            alt=""
+            alt="shop"
           />
           <img
             class="photos-app__main--2"
             src="./images/apps/images/photo2.jpeg"
-            alt=""
+            alt="snowy landscape"
           />
           <img
             class="photos-app__main--3"
             src="./images/apps/images/photo3.jpeg"
-            alt=""
+            alt="beach landscape"
           />
           <img
             class="photos-app__main--4"
             src="./images/apps/images/photo4.jpeg"
-            alt=""
+            alt="desert landscape"
           />
           <img
             class="photos-app__main--5"
             src="./images/apps/images/photo5.jpeg"
-            alt=""
+            alt="desert landscape"
           />
           <img
             class="photos-app__main--6"
             src="./images/apps/images/photo6.jpeg"
-            alt=""
+            alt="guitar"
           />
           <img
             class="photos-app__main--7"
             src="./images/apps/images/photo7.jpeg"
-            alt=""
+            alt="snowy landscape"
           />
           <img
             class="photos-app__main--8"
             src="./images/apps/images/photo8.jpeg"
-            alt=""
+            alt="cliffs landscape"
           />
           <img
             class="photos-app__main--9"
             src="./images/apps/images/photo9.jpeg"
-            alt=""
+            alt="carved pumpkin hallowenn"
           />
         </div>
 

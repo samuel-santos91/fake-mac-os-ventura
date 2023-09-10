@@ -1,5 +1,13 @@
 import displayCurrentTime from "./dateTime.mjs";
 import { dropdownMenu, clickOffDropdownBlock } from "./dropdownMenus.mjs";
+import {
+  togglePlay,
+  setVolume,
+  setCurrentTime,
+  loadMetaData,
+  timeupdate,
+  updateTrackTime,
+} from "./music.mjs";
 
 //DATE AND TIME
 displayCurrentTime();
@@ -68,4 +76,19 @@ closeButton.forEach((icon) => {
 appWindow.forEach((window) => {
   window.addEventListener("click", bringForward);
 });
+
+//MUSIC APP
+const playButton = document.getElementById("playButton");
+const audioPlayer = document.getElementById("audioPlayer");
+const audioSlider = document.getElementById("audioSlider");
+const volumeSlider = document.getElementById("volumeSlider");
+
+playButton.addEventListener("click", togglePlay);
+audioPlayer.addEventListener("timeupdate", updateTrackTime);
+
+audioSlider.addEventListener("input", setCurrentTime);
+audioPlayer.addEventListener("timeupdate", timeupdate);
+audioPlayer.addEventListener("loadedmetadata", loadMetaData);
+
+volumeSlider.addEventListener("input", setVolume);
 
