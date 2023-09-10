@@ -46,6 +46,7 @@ const openApp = (e) => {
 };
 
 const closeApp = (e) => {
+  console.log(e.target)
   const elem = document.getElementById(`${e.target.id}AppWindow`);
   elem.style.display = "none";
 };
@@ -61,7 +62,7 @@ const bringForward = (e) => {
     const newElem = document.getElementById(
       `${e.target.classList.value.slice(0, 6)}AppWindow`
     );
-    newElem.style.zIndex = 10;
+    if (newElem) return (newElem.style.zIndex = 10);
   }
 };
 
@@ -91,4 +92,3 @@ audioPlayer.addEventListener("timeupdate", timeupdate);
 audioPlayer.addEventListener("loadedmetadata", loadMetaData);
 
 volumeSlider.addEventListener("input", setVolume);
-

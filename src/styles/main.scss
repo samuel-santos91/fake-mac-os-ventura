@@ -41,7 +41,7 @@ main {
   .musics-app {
     @include mixins.appWindow(7rem, 20rem, rgb(255, 106, 106));
     &__header-commands {
-      margin-top: 0.8rem;
+      margin: 0.8rem 0 0 2rem;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -89,7 +89,7 @@ main {
             color: rgb(162, 0, 0);
           }
           &--play {
-            margin: 2rem 0 0 -1rem;
+            margin: 2rem 0 0 -1.4rem;
             width: 6rem;
             padding: 0.4rem;
             padding-left: 1rem;
@@ -101,7 +101,7 @@ main {
           img {
             position: relative;
             top: .3rem;
-            left: 1rem;
+            left: .6rem;
             width: 1.1rem;
           }
         }
