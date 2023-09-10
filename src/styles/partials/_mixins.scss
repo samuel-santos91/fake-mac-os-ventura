@@ -40,7 +40,8 @@
   border-radius: 10px;
 
   &__header {
-    width: 100%; 
+    position: fixed;
+    width: 50rem;
     height: 2.7rem;
     border-radius: 10px 10px 0 0;
     background-color: rgb(229, 228, 228);
@@ -55,18 +56,34 @@
     &--min {
       width: 0.5rem;
       height: 0.3rem;
-      margin: 0 .3rem;
+      margin: 0 0.3rem;
       padding: 0.2rem 0.1rem;
       background-color: rgb(255, 225, 0);
       border: 0.1px solid rgb(206, 182, 2);
       border-radius: 50%;
     }
     &--exp {
-      width: .7rem;
+      width: 0.7rem;
       background-color: rgb(2, 194, 2);
       border: 0.1px solid rgb(1, 140, 1);
       border-radius: 50%;
       transform: rotate(45deg);
     }
   }
+}
+
+@mixin inputIconPosition($width, $right, $left, $top) {
+  z-index: 1;
+  width: $width;
+  position: relative;
+  right: $right;
+  left: $left;
+  top: $top;
+}
+
+@mixin gridPicPosition($col-start, $col-end, $ro-start, $ro-end) {
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+  grid-row-start: $ro-start;
+  grid-row-end: $ro-end;
 }
