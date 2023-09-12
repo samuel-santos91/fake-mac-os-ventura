@@ -80,11 +80,13 @@ appWindow.forEach((window) => {
 
 //MUSIC APP
 const playButton = document.getElementById("playButton");
+const playIcon = document.getElementById("playIcon");
 const audioPlayer = document.getElementById("audioPlayer");
 const audioSlider = document.getElementById("audioSlider");
-const volumeSlider = document.getElementById("volumeSlider");
+const volumeSlider = document.getElementById("volumeSlider"); 
 
 playButton.addEventListener("click", togglePlay);
+playIcon.addEventListener("click", togglePlay);
 audioPlayer.addEventListener("timeupdate", updateTrackTime);
 
 audioSlider.addEventListener("input", setCurrentTime);
