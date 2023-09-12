@@ -28,6 +28,7 @@ const closeButton = document.querySelectorAll('[class*="app__header--close"]');
 const appWindow = document.querySelectorAll(
   ".google-app, .musics-app, .photos-app"
 );
+const appNav = document.querySelectorAll('[class*="app__header"]');
 
 const cleanZIndex = () => {
   appWindow.forEach((icon) => {
@@ -46,15 +47,17 @@ const openApp = (e) => {
 };
 
 const closeApp = (e) => {
-  console.log(e.target)
+  console.log(e.target);
   const elem = document.getElementById(`${e.target.id}AppWindow`);
   elem.style.display = "none";
 };
 
 const bringForward = (e) => {
-  cleanZIndex();
-
   const elem = document.getElementById(e.target.id);
+  if ((elem && elem.id === "playButton") || (elem && elem.id === "playIcon"))
+    return;
+
+  cleanZIndex();
 
   if (elem) {
     elem.style.zIndex = 10;
@@ -83,7 +86,7 @@ const playButton = document.getElementById("playButton");
 const playIcon = document.getElementById("playIcon");
 const audioPlayer = document.getElementById("audioPlayer");
 const audioSlider = document.getElementById("audioSlider");
-const volumeSlider = document.getElementById("volumeSlider"); 
+const volumeSlider = document.getElementById("volumeSlider");
 
 playButton.addEventListener("click", togglePlay);
 playIcon.addEventListener("click", togglePlay);
