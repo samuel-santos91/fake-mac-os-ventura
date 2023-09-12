@@ -9,11 +9,11 @@ export function togglePlay() {
   if (audioPlayer.paused) {
     audioPlayer.play();
     playButton.innerHTML = "Pause";
-    playIcon.src = "./images/apps/icons/pause.png";
+    playIcon.src = "./assets/images/apps/icons/pause.png";
   } else {
     audioPlayer.pause();
     playButton.textContent = "Play";
-    playIcon.src = "./images/apps/icons/play.png";
+    playIcon.src = "./assets/images/apps/icons/play.png";
   }
 }
 
