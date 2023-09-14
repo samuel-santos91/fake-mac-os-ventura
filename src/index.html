@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/dropdowns.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./js/script.mjs" defer></script>
+    <title>Fake macOS Ventura</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <section class="menu">
+          <ul class="menu__list">
+            <li class="menu__list--apple">
+              <img
+                id="apple"
+                class="list"
+                src="./assets/images/icons/apple-icon.png"
+                alt="apple icon"
+              />
+            </li>
+            <li id="finder" class="menu__list--bold list">Finder</li>
+            <li id="file" class="list">File</li>
+            <li id="edit" class="list">Edit</li>
+            <li id="view" class="list">View</li>
+            <li id="go" class="list">Go</li>
+            <li id="window" class="list">Window</li>
+            <li id="help" class="list">Help</li>
+          </ul>
+        </section>
+
+        <section class="clock">
+          <div>
+            <p id="clock"></p>
+          </div>
+        </section>
+      </nav>
+
+      <section class="dropdown-menu">
+        <div class="apple-menu dropdown">
+          <ul class="apple-menu__list ul">
+            <li>About This Mac</li>
+            <hr />
+            <li>System Settings...</li>
+            <li>App Store...</li>
+            <hr />
+            <li>Force Quit</li>
+            <hr />
+            <li>Sleep</li>
+            <li>Restart...</li>
+            <li>Shut Down...</li>
+            <hr />
+            <li>Log Out</li>
+          </ul>
+        </div>
+
+        <div class="finder-menu dropdown">
+          <ul class="finder-menu__list ul">
+            <li>About Finder</li>
+            <hr />
+            <li>Settings...</li>
+            <hr />
+            <li>Empty Bin...</li>
+            <hr />
+            <li>Services</li>
+            <hr />
+            <li>Hide Finder</li>
+            <li>Hide Others</li>
+            <li>Show All</li>
+          </ul>
+        </div>
+
+        <div class="file-menu dropdown">
+          <ul class="file-menu__list ul">
+            <li>New Finder Window</li>
+            <li>New Folder</li>
+            <li>New Folder With Selection</li>
+            <li>New Smart Folder</li>
+            <li>New Tab</li>
+            <li>Open</li>
+            <li>Open With</li>
+            <li>Close Window</li>
+            <hr />
+            <li>Get Info</li>
+            <li>Rename</li>
+            <li>Compress</li>
+            <li>Duplicate</li>
+            <li>Make Alias</li>
+            <li>Quick Look</li>
+            <li>Print</li>
+            <hr />
+            <li>Share...</li>
+            <hr />
+            <li>Show Original</li>
+            <li>Add to Sidebar</li>
+            <hr />
+            <li>Move to Bin</li>
+            <li>Eject</li>
+            <hr />
+            <li>Find</li>
+          </ul>
+        </div>
+
+        <div class="edit-menu dropdown">
+          <ul class="edit-menu__list ul">
+            <li>Undo Move of 2 Items</li>
+            <li>Redo</li>
+            <hr />
+            <li>Cut</li>
+            <li>Copy</li>
+            <li>Paste</li>
+            <li>Select All</li>
+            <hr />
+            <li>Show Clipboard</li>
+            <hr />
+            <li>Start Dictation...</li>
+            <li>Emoji & Symbols</li>
+          </ul>
+        </div>
+
+        <div class="view-menu dropdown">
+          <ul class="view-menu__list ul">
+            <li>as Icons</li>
+            <li>as List</li>
+            <li>as Columns</li>
+            <li>as Gallery</li>
+            <hr />
+            <li>Use Stacks</li>
+            <li>Sort By</li>
+            <li>Clean Up</li>
+            <li>Clean Up By</li>
+            <hr />
+            <li>Hide Sidebar</li>
+            <li>Hide Preview</li>
+            <hr />
+            <li>Hide Toolbar</li>
+            <li>Show All Tabs</li>
+            <li>Hide Tab Bar</li>
+            <li>Hide Status Bar</li>
+            <hr />
+            <li>Customise Toolbar...</li>
+            <hr />
+            <li>Show View Options</li>
+            <li>Show Preview Options</li>
+          </ul>
+        </div>
+
+        <div class="go-menu dropdown">
+          <ul class="go-menu__list ul">
+            <li>Back</li>
+            <li>Forward</li>
+            <li>Select Startup Disk</li>
+            <hr />
+            <li>Recent</li>
+            <li>Documents</li>
+            <li>Desktop</li>
+            <li>Downloads</li>
+            <li>Home</li>
+            <li>Computer</li>
+            <li>AirDrop</li>
+            <li>Network</li>
+            <li>iCloud Drive</li>
+            <li>Shared</li>
+            <li>Applications</li>
+            <li>Utilities</li>
+            <hr />
+            <li>Go to Folder...</li>
+            <li>Connect to Server...</li>
+          </ul>
+        </div>
+
+        <div class="window-menu dropdown">
+          <ul class="window-menu__list ul">
+            <li>Minimise</li>
+            <li>Zoom</li>
+            <li>Move Window to the Left Side of the Screen</li>
+            <li>Move Window to the Right Side of the Screen</li>
+            <li>Replace Window</li>
+            <hr />
+            <li>Remove Window From Set</li>
+            <li>Cycle Through Windows</li>
+            <li>Show Progress Window</li>
+            <hr />
+            <li>Show Previous Tab</li>
+            <li>Show Next Tab</li>
+            <li>Computer</li>
+            <li>Move Tab to New Window</li>
+            <li>Network</li>
+            <li>Merge All Windows</li>
+            <hr />
+            <li>Bring All to Front</li>
+          </ul>
+        </div>
+
+        <div class="help-menu dropdown">
+          <ul class="help-menu__list ul">
+            <input type="text" placeholder="search" />
+            <li>Tips for Your Mac</li>
+            <li>macOs Help</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="google-app" id="googleAppWindow">
+        <div class="google-app__header">
+          <img
+            id="google"
+            class="google-app__header--close"
+            src="./assets/images/apps/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="google-app__header--min"
+            src="./assets/images/apps/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="google-app__header--exp"
+            src="./assets/images/apps/icons/expand.png"
+            alt="expand window"
+          />
+        </div>
+
+        <div class="google-app__main">
+          <img
+            class="google-app__main--google"
+            src="./assets/images/apps/images/google.png"
+            alt="google"
+          />
+          <img
+            class="google-app__main--search"
+            src="./assets/images/apps/icons/search.png"
+            alt="search icon"
+          />
+          <img
+            class="google-app__main--voice-search"
+            src="./assets/images/apps/icons/voice-search.png"
+            alt="voice search"
+          />
+          <img
+            class="google-app__main--image-search"
+            src="./assets/images/apps/icons/image-search.png"
+            alt="image search"
+          />
+          <input type="text" placeholder="Search Google or type a URL" />
+        </div>
+      </section>
+
+      <section class="musics-app" id="musicsAppWindow">
+        <div class="musics-app__header">
+          <img
+            id="musics"
+            class="musics-app__header--close"
+            src="./assets/images/apps/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="musics-app__header--min"
+            src="./assets/images/apps/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="musics-app__header--exp"
+            src="./assets/images/apps/icons/expand.png"
+            alt="expand window"
+          />
+        </div>
+
+        <div class="musics-app__header-commands">
+          <div class="musics-app__header-commands--audio-track">
+            <input type="range" id="audioSlider" min="0" max="400" value="0" />
+          </div>
+          <p id="audioCurrentTime" class="musics-app__header-commands--track-time">-·-</p>
+          <img
+            class="musics-app__header-commands--sound-icon"
+            src="./assets/images/apps/icons/nosound.png"
+            alt="no sound"
+          />
+          <div class="musics-app__header-commands--volume-track">
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
+          <img
+            class="musics-app__header-commands--sound-icon"
+            src="./assets/images/apps/icons/sound.png"
+            alt="max sound"
+          />
+        </div>
+
+        <div class="musics-app__main">
+          <div class="album">
+            <img
+              class="album__image"
+              src="./assets/images/apps/images/album-cover.jpg"
+              alt="alice in chains album cover"
+            />
+            <div class="album__info">
+              <h2 class="album__info--version">Unplugged</h2>
+              <p class="album__info--band">Alice in Chains</p>
+              <p class="album__info--genre">ALTERNATIVE · 1996</p>
+              <img
+                id="playIcon"
+                src="./assets/images/apps/icons/play.png"
+                alt="play/pause"
+              />
+              <button class="album__info--play" id="playButton">Play</button>
+            </div>
+          </div>
+
+          <hr />
+          <div class="album-list">
+            <ol>
+              <li>Rooster</li>
+            </ol>
+            <p>6:40</p>
+          </div>
+          <hr />
+
+          <audio id="audioPlayer" src="./assets/audio/rooster.mp3"></audio>
+        </div>
+      </section>
+
+      <section class="photos-app" id="photosAppWindow">
+        <div class="photos-app__header">
+          <img
+            id="photos"
+            class="photos-app__header--close"
+            src="./assets/images/apps/icons/close.png"
+            alt="close window icon"
+          />
+          <img
+            class="photos-app__header--min"
+            src="./assets/images/apps/icons/minimize.png"
+            alt="minimize window"
+          />
+          <img
+            class="photos-app__header--exp"
+            src="./assets/images/apps/icons/expand.png"
+            alt="expand window"
+          />
+        </div>
+
+        <div class="photos-app__main">
+          <h2>15 Jun 2020</h2>
+          <img
+            class="photos-app__main--1"
+            src="./assets/images/apps/images/photo1.jpeg"
+            alt="shop"
+          />
+          <img
+            class="photos-app__main--2"
+            src="./assets/images/apps/images/photo2.jpeg"
+            alt="snowy landscape"
+          />
+          <img
+            class="photos-app__main--3"
+            src="./assets/images/apps/images/photo3.jpeg"
+            alt="beach landscape"
+          />
+          <img
+            class="photos-app__main--4"
+            src="./assets/images/apps/images/photo4.jpeg"
+            alt="desert landscape"
+          />
+          <img
+            class="photos-app__main--5"
+            src="./assets/images/apps/images/photo5.jpeg"
+            alt="desert landscape"
+          />
+          <img
+            class="photos-app__main--6"
+            src="./assets/images/apps/images/photo6.jpeg"
+            alt="guitar"
+          />
+          <img
+            class="photos-app__main--7"
+            src="./assets/images/apps/images/photo7.jpeg"
+            alt="snowy landscape"
+          />
+          <img
+            class="photos-app__main--8"
+            src="./assets/images/apps/images/photo8.jpeg"
+            alt="cliffs landscape"
+          />
+          <img
+            class="photos-app__main--9"
+            src="./assets/images/apps/images/photo9.jpeg"
+            alt="carved pumpkin hallowenn"
+          />
+        </div>
+
+        <div class="photos-app__footer">
+          <h3><strong>Curation Complete</strong></h3>
+          <p>
+            Photos and videos are curated when your device is connected to power
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="icons-area">
+        <li class="icon">
+          <img src="./assets/images/icons/finder.png" alt="finder" />
+        </li>
+        <li class="icon">
+          <img id="google" src="./assets/images/icons/chrome.png" alt="chrome" />
+          <p class="icon__opened-app">.</p>
+        </li>
+
+        <li class="icon">
+          <img
+            class="icon--firefox"
+            src="./assets/images/icons/firefox.png"
+            alt="firefox"
+          />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--safari"
+            src="./assets/images/icons/safari.png"
+            alt="safari"
+          />
+        </li>
+        <li class="icon">
+          <img id="musics" src="./assets/images/icons/music.png" alt="music" />
+          <p class="icon__opened-app">.</p>
+        </li>
+        <li class="icon">
+          <img src="./assets/images/icons/spotify.png" alt="spotify" />
+        </li>
+        <li class="icon">
+          <img src="./assets/images/icons/adobe.png" alt="adobe" />
+        </li>
+        <li class="icon">
+          <img src="./assets/images/icons/vlc.png" alt="vlc" />
+        </li>
+        <li class="icon">
+          <img
+            id="photos"
+            class="icon--photos"
+            src="./assets/images/icons/photos.png"
+            alt="photos"
+          />
+          <p class="icon__opened-app icon__opened-app--photos">.</p>
+        </li>
+        <li class="icon">
+          <img src="./assets/images/icons/appstore.png" alt="app store" />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--visual"
+            src="./assets/images/icons/visualcode.png"
+            alt="visual studio code"
+          />
+        </li>
+        <li class="icon">
+          <img
+            class="icon--setting"
+            src="./assets/images/icons/settings.png"
+            alt="settings"
+          />
+        </li>
+        <hr />
+        <li class="icon">
+          <img class="icon--bin" src="./assets/images/icons/bin.png" alt="bin" />
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

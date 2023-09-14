@@ -1,0 +1,345 @@
+main .google-app {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  background-color: white;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+main .google-app__header {
+  position: fixed;
+  width: 50rem;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .google-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .google-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .google-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+main .google-app__main {
+  margin-top: 3.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .google-app__main--google {
+  margin-bottom: -3rem;
+  width: 24rem;
+}
+main .google-app__main--search {
+  z-index: 1;
+  width: 1.1rem;
+  position: relative;
+  right: none;
+  left: -17.3rem;
+  top: 1.7rem;
+}
+main .google-app__main--voice-search {
+  z-index: 1;
+  width: 1.2rem;
+  position: relative;
+  right: -14.7rem;
+  left: none;
+  top: 0.6rem;
+}
+main .google-app__main--image-search {
+  z-index: 1;
+  width: 1.2rem;
+  position: relative;
+  right: -16.9rem;
+  left: none;
+  top: -0.6rem;
+}
+main .google-app__main input {
+  margin-top: -2.5rem;
+  height: 2.4rem;
+  width: 37rem;
+  text-indent: 2.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 1px 1px 4px 1px rgb(160, 160, 160);
+}
+main .google-app__main input:focus-visible {
+  outline: none;
+}
+main .musics-app {
+  display: none;
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+  background-color: rgb(255, 106, 106);
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+main .musics-app__header {
+  position: fixed;
+  width: 50rem;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .musics-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .musics-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .musics-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+main .musics-app__header-commands {
+  margin: 0.8rem 0 0 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+}
+main .musics-app__header-commands--audio-track {
+  margin-right: 1rem;
+}
+main .musics-app__header-commands--audio-track input {
+  width: 20rem;
+}
+main .musics-app__header-commands--track-time {
+  margin: 0 5rem 0 0;
+  color: black;
+}
+main .musics-app__header-commands--volume-track input {
+  width: 5rem;
+}
+main .musics-app__header-commands--sound-icon {
+  width: 1rem;
+  margin: 0 0.5rem;
+}
+main .musics-app__main {
+  margin: 3rem 2.5rem 0 2.5rem;
+}
+main .musics-app__main .album {
+  margin: 4rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .musics-app__main .album__info {
+  margin-left: 2rem;
+}
+main .musics-app__main .album__info--version {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  color: black;
+}
+main .musics-app__main .album__info--band {
+  margin: 0 0 1rem 0;
+  font-size: 1.7rem;
+  color: rgb(162, 0, 0);
+}
+main .musics-app__main .album__info--play {
+  margin: 2rem 0 0 -1.4rem;
+  width: 6rem;
+  padding: 0.4rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: rgb(250, 38, 38);
+}
+main .musics-app__main .album__info img {
+  position: relative;
+  top: 0.3rem;
+  left: 0.6rem;
+  width: 1.1rem;
+}
+main .musics-app__main .album__image {
+  width: 15rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+}
+main .musics-app__main .album-list {
+  display: flex;
+  justify-content: space-between;
+}
+main .musics-app__main .album-list ol {
+  padding-left: 1.2rem;
+}
+main .musics-app__main .album-list ol li {
+  padding-left: 0.9rem;
+}
+main .musics-app__main .album-list p {
+  margin-right: 0.5rem;
+}
+main .musics-app__main hr {
+  width: 44.5rem;
+  border: 0.1px solid white;
+}
+main .photos-app {
+  display: none;
+  position: absolute;
+  top: 10rem;
+  left: 35rem;
+  background-color: rgb(250, 246, 246);
+  width: 50rem;
+  height: 30rem;
+  border-radius: 10px;
+  overflow: scroll;
+}
+main .photos-app__header {
+  position: fixed;
+  width: 50rem;
+  height: 2.7rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(229, 228, 228);
+}
+main .photos-app__header--close {
+  margin: 1rem 0 0 1rem;
+  width: 0.7rem;
+  background-color: rgb(251, 72, 72);
+  border: 0.1px solid rgb(194, 55, 55);
+  border-radius: 50%;
+}
+main .photos-app__header--min {
+  width: 0.5rem;
+  height: 0.3rem;
+  margin: 0 0.3rem;
+  padding: 0.2rem 0.1rem;
+  background-color: rgb(255, 225, 0);
+  border: 0.1px solid rgb(206, 182, 2);
+  border-radius: 50%;
+}
+main .photos-app__header--exp {
+  width: 0.7rem;
+  background-color: rgb(2, 194, 2);
+  border: 0.1px solid rgb(1, 140, 1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+main .photos-app__main {
+  display: grid;
+  margin: 0 2.5rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 8rem);
+  grid-gap: 4px;
+}
+main .photos-app__main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .photos-app__main h2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 4rem 0 0 2rem;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px black;
+  position: fixed;
+  z-index: 1;
+}
+main .photos-app__main--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+main .photos-app__main--2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+main .photos-app__main--3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+main .photos-app__main--4 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+main .photos-app__main--5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+main .photos-app__main--6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+main .photos-app__main--7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+main .photos-app__main--8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+main .photos-app__main--9 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+main .photos-app__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 20rem;
+  color: black;
+}
+main .photos-app__footer h3 {
+  margin-bottom: 0;
+}
+main .photos-app__footer P {
+  text-align: center;
+  margin-top: 0.5rem;
+}

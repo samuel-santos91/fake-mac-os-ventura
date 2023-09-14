@@ -1,0 +1,136 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../assets/images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-size: small;
+  color: white;
+}
+body:hover {
+  cursor: default;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  background-color: rgb(21, 19, 24);
+}
+body header nav .menu__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+body header nav .menu__list .list {
+  margin: 0;
+  padding: 0.5rem;
+}
+body header nav .menu__list .highlight {
+  border-radius: 5px;
+  background-color: rgba(86, 98, 142, 0.984);
+}
+body header nav .menu__list--apple {
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+}
+body header nav .menu__list--apple img {
+  width: 1.1rem;
+}
+body header nav .menu__list--bold {
+  font-weight: 600;
+}
+body header nav .clock p {
+  margin-right: 1rem;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body footer .icons-area {
+  background-color: rgba(86, 98, 142, 0.984);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0.4rem 0;
+  padding: 0.3rem;
+  border-radius: 17px;
+}
+body footer .icons-area .icon {
+  width: 3rem;
+  margin: 0 0.3rem;
+  transition: transform 0.2s ease;
+}
+body footer .icons-area .icon:hover {
+  transform: scale(1.2) translate(0, -5px);
+}
+body footer .icons-area .icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body footer .icons-area .icon__opened-app {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 0.1rem;
+  transform: translate(0, 23px) rotate(180deg);
+  color: black;
+  font-size: 1.6rem;
+}
+body footer .icons-area .icon__opened-app--photos {
+  transform: translate(0, 28px) rotate(180deg);
+}
+body footer .icons-area .icon--firefox {
+  width: 2.5rem;
+}
+body footer .icons-area .icon--safari {
+  width: 2.8rem;
+}
+body footer .icons-area .icon--photos {
+  width: 2.4rem;
+  margin: auto;
+}
+body footer .icons-area .icon--visual {
+  width: 1.9rem;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 10px;
+  margin: auto;
+}
+body footer .icons-area .icon--visual::before {
+  content: "hello";
+  z-index: 10;
+}
+body footer .icons-area .icon--setting {
+  width: 2.2rem;
+  background-color: rgb(182, 182, 182);
+  padding: 0.1rem;
+  border-radius: 10px;
+  margin: auto;
+}
+body footer .icons-area .icon--bin {
+  width: 2.8rem;
+}
+body footer .icons-area hr {
+  width: 2.5rem;
+  transform: rotate(90deg);
+  border: 0.1px solid black;
+  margin: 0;
+}

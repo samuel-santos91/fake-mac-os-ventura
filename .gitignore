@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+
+# Editor
+.vscode/
+
+# Build and compiled files
+dist/
+*.log
+npm-debug.log*
+
+# Dependencies
+npm-debug.log*
+yarn-error.log*

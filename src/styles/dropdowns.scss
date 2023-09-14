@@ -1,0 +1,46 @@
+@use "./partials/mixins";
+
+.apple-menu {
+  @include mixins.dropdownMenu(15rem, 0.4rem);
+}
+
+.finder-menu {
+  @include mixins.dropdownMenu(10rem, 2.8rem);
+}
+
+.file-menu {
+  @include mixins.dropdownMenu(14rem, 6.3rem);
+}
+
+.edit-menu {
+  @include mixins.dropdownMenu(13rem, 8.7rem);
+}
+
+.view-menu {
+  @include mixins.dropdownMenu(14rem, 11.2rem);
+}
+
+.go-menu {
+  @include mixins.dropdownMenu(13rem, 14.1rem);
+}
+
+.window-menu {
+  @include mixins.dropdownMenu(22rem, 16.2rem);
+}
+
+.help-menu {
+  @include mixins.dropdownMenu(22rem, 20.2rem);
+  input {
+    margin-bottom: 0.5rem;
+    background-color: rgb(166, 175, 191);
+    width: 21.5rem;
+    height: 1.4rem;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-indent: 0.5rem;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
